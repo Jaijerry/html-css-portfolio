@@ -1,0 +1,129 @@
+body {
+    background-color: #9290C3;
+  }
+  .nav-container {
+    background-color: #070F2B;
+    height: 6rem;
+  }
+  .nav-title {
+    color: whitesmoke;
+    text-shadow:  0 0 7px #fff,
+                  0 0 21px #fff,
+                  0 0 42px #9290C3;
+    align-self: center;
+    padding-left: 20px;
+    font-family: "Ubuntu Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 2rem;
+  }
+  .nav-canvas {
+    background-color: #070F2B;
+  }
+  .link {
+    align-self: center;
+    font-size: 1.2rem;
+    padding-right: 2rem;
+  }
+  a {
+    color: #fff;
+    outline-color: transparent;
+    text-decoration: none;
+    font-family:  "Poppins", sans-serif;
+    
+  }
+  .link a:hover {
+    color: #9290C3;
+    text-shadow:  0 0 5px #9290C3;
+    text-decoration: overline;
+  }
+  .about-container {
+    background-color: #535C91;
+    padding: 50px;
+  }
+  .about-features {
+    font-size: x-large;
+    background-color: #9290C3;
+    padding: 25px;
+    border-radius: 10px;
+  }
+  .about-features:hover {
+    background-color: #535C91;
+    color: #fff;
+    text-shadow:  0 0 5px #9290C3;
+  }
+  .qualifications-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 50px;
+  }
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+     background-position: 0% 50%;
+   }
+  }
+  .q-features h2{
+    color: #fff;
+    font-family: "Ubuntu Sans", sans-serif;
+    text-align: center;
+    padding: 10px;
+    font-size: 2.5rem;
+  }
+  .q-features {
+    margin: 0px 100px;
+    background: linear-gradient(60deg, #070F2B, #535C91, #234453);
+    background-size: 180% 180%;
+    animation: gradient-animation 5s ease infinite;
+    color: whitesmoke;
+  }
+  #Skills {
+    background-color: #535C91;
+    padding: 50px;
+  }
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .skills h2 {
+    color: #fff;
+    font-family: "Ubuntu Sans", sans-serif;
+    font-size: 2.5rem;
+    padding: 10px 0px;
+  }
+  .projects-container {
+    display: flex;
+  }
+  .contact-container {
+    background-color: #535C91;
+    padding: 50px;
+  }
+  .contact {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 1200px) {
+    .projects-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .contact {
+      display: grid;
+      grid-template: 1fr 1fr / 1fr 1fr;
+      gap: 4rem;
+    }
+    .link {
+      align-self: flex-start;
+    }
+    
+  }
